@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class ColorFilter:
 
     @staticmethod
@@ -17,6 +16,7 @@ class ColorFilter:
     def to_green(array):
         return array * [0, 1, 0]
 
+    @staticmethod
     def to_red(self, array):
         return array - self.to_green(array) - self.to_blue(array)
 
